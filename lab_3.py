@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "http://localhost:5000/number/"
+BASE_URL = "http://127.0.0.1:5000/number/"
 
 #отправка GET запроса
 def send_get_request():
@@ -38,7 +38,7 @@ def calculate(operand1, operation, operand2):
 
 
 try:
-    #отправка запросов
+    #вызов функций
     get_data = send_get_request()
     post_data = send_post_request()
     delete_data = send_delete_request()
